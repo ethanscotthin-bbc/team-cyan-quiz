@@ -1,6 +1,7 @@
 # team-cyan-quiz
 
 ## Naming conventions
+
 ### JavaScript
 [Naming Conventions](https://work-blog.gitbook.io/project/programming-tips/nodejs/ecmascript-naming-conventions)
 
