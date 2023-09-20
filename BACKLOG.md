@@ -1,6 +1,8 @@
 # Backlog
 *Checklist heading indicates backlog item*\
 *Checklist item indicates a task*
+
+All tasks are subject to change.
 ## Sprints
 ### Wednesday 20th September
 ### **AM**
