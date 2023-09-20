@@ -8,9 +8,9 @@ All tasks are subject to change.
 ### **AM**
 
 **Sprint 1**
-> Research 4-5 questions for the first question topic and add to quiz.JSON
+> DONEResearch 4-5 questions for the first question topic and add to quiz.JSON
 
-<!-- > Split each category of quiz into separate HTML documents
+<!-- >IGNORED Split each category of quiz into separate HTML documents
 - [ ] Copy basic template of index.html onto 7 new HTML files
 - [ ] Add title of category
 - [ ] Add quiz question template via inline javascript (linked in the footer of all pages) -->
