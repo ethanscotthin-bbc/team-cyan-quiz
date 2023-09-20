@@ -28,30 +28,21 @@ All tasks are subject to change.
 
 > Add all additional questions for the other topics to quiz.JSON
 
-> Test to ensure that the JSON is recieved correctly in JS
-
 ---
 ### **PM**
 **Sprint 3**
-> Create file called metrics.JSON
-
-> Log topics selected
+- [ ] Create file called metrics.JSON
 - [ ] On a next button press from the first question, or from a click of the question item at the top, log the topic accessed and time of day
 
 > Build basic structure of the leaderboard in a new JSON file
-
-> All tasks related to users and user details - possibly tied in with leaderboard file??
-
-**Sprint 4**
-> Continue with the integration of user accounts and the leaderboard
-
-> Test to ensure that the leaderboard updates correctly
 ---
 ### Thursday 21st September
 ### **AM**
 
 **Sprint 1**
-- [ ] Example
-
-**Sprint 2**
-- [ ] Example
+- [ ] Put new questions on JSON
+- [ ] Show button to display summary page
+- [ ] Display leaderboard using values available (line 101 for sorting)
+- [ ] Save metrics after each click/summary page load
+- [ ] Log topics selected
+- [ ] Test to ensure that the leaderboard updates correctly
