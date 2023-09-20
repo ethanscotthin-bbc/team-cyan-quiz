@@ -168,15 +168,21 @@
     </div>
     <script type="text/javascript" src="quiz.json"></script>
     <script>
-      mydata.jillsquiz.forEach((element, index) => {
-        let ques = element.quizquestions[0].question;
-        let topic = element.topic;
-        let ans = element.quizquestions[0].correct_answer;
-        let ans1 = element.quizquestions[0].answers[0];
-        let ans2 = element.quizquestions[0].answers[1];
-        let ans3 = element.quizquestions[0].answers[2];
+      var template = "";
 
-        let mytemplate = `<div class="col-lg-12 ml-auto">
+      quiz.history.quizquestions.forEach((element, index) => {
+
+        let ques = element.question;
+        let ans = element.correct_answer;
+
+        let ans1 = element.answers[0];
+        let ans2 = element.answers[1];
+        let ans3 = element.answers[2];
+        let topic = "history"
+
+        console.log(ques);
+
+        template = template + `<div class="col-lg-12 ml-auto">
             <p class="pre-wrap lead">Question - ${ques}</p>
             <p class="pre-wrap lead">
                 <label for="${topic}">Choose an answer:</label>
@@ -194,7 +200,7 @@
             <button onclick="check('${topic}', ${ans})">Check this answer</button>
             <br/><br/>
           </div>`;
-        document.getElementById(index.toString()).innerHTML = mytemplate;
+        document.getElementById("0").innerHTML = template;
       });
 
       function check(thistopic, correctanswer) {

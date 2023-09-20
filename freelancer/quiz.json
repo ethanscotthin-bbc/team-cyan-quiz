@@ -1,6 +1,7 @@
-var myquizquestions = {
+var quiz = {
 
 	"history": {
+
 			"quizquestions": [
 				
 			{
@@ -22,6 +23,8 @@ var myquizquestions = {
 				],
 				"correct_answer": 2
 			},
+
+			
 		
 			]
 		},
