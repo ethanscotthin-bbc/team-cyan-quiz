@@ -1,9 +1,24 @@
 var thisattempt = [
     {
-    "QdataID": "0",
-    "QNumber": "0",
+    "category":"",
+    "QdataID": "",
+    "QNumber": 0,
     "correctanswer": true 
     }
 ]
 
 var textfordisplay = "Test"
+var alltimeglobalstats{
+    "numberofusers":0,
+    "quizzestaken":0,
+    "totalcorrect":0,
+    "totalincorrect":0,
+    "numhistory":0,
+    "numgeo":0,
+    "numpolitics":0,
+    "numconserv":0,
+    "numceleb":0,
+    "numlaw":0,
+    "numsport":0,
+
+}

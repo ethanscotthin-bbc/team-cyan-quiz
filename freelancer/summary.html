@@ -88,12 +88,13 @@
           <script>
           let scoretotal = 0
           console.log(scoretotal)
-          for (let x in thisattempt) {
-          if (thisattempt[x].correctanswer = true) {
-          console.log(addedcorrectaanswer)
-          scoretotal +=1
+          for (let numQ in thisattempt) {
+          if (thisattempt[numQ].correctanswer = true) {
+            console.log("addedcorrectaanswer")
+            scoretotal +=1
             }
           }
+          document.getElementById("subheadingscores").innerHTML=("Well done you got ", scoretotal, " out of ", numQ," questions correct")
       </script>
       </div>
     </header>
