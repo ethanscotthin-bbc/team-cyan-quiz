@@ -66,11 +66,6 @@
     </nav>
     <header class="masthead bg-primary text-black text-center">
       <div class="container d-flex align-items-center flex-column">
-        <!-- Masthead Avatar Image--><img
-          class="masthead-avatar mb-5"
-          src="assets/img/cranesbillgeranium.jpg"
-          alt=""
-        />
         <!-- Masthead Heading-->
         <h1 class="masthead-heading mb-0">Quiz</h1>
         <!-- Icon Divider-->
@@ -141,7 +136,6 @@
         <!-- Section Content-->
         <div
           class="row"
-          style="border-width: medium; border-color: black; border-style: solid"
           id="${element}"
         ></div>
      </div>
@@ -172,25 +166,18 @@
 
   
 
-        template = template + `<div class="col-lg-12 ml-auto data-id=${index}">
+        template = template + `<div class="col-lg-12 ml-auto py-4 border border-dark rounded mb-3" data-id="${index}">
             <p class="pre-wrap lead">Question - ${ques}</p>
-            <p class="pre-wrap lead">
-                <label for="${topic}">Choose an answer:</label>
-                <select name="${topic}" id="${topic}-select">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                </select>
-                <ol>
-                    <li>${ans1}</li>
-                    <li>${ans2}</li>
-                    <li>${ans3}</li>
-                </ol>
-            </p>
-            <button onclick="check('${topic}', ${ans})">Check this answer</button>
-            <br/><br/>
-            <button onclick="move(this, ${index}, ${index++})">Next</button>
+            <p class="pre-wrap lead" id="${topic}-select">`
+        element.answers.forEach((answer, internalIndex) => {
+            template = template + `<button onclick="check(this, '${internalIndex + 1}', ${ans})" class="btn btn-outline-dark btn-lg m-1">${answer}</button>`
+        });
+
+        template = template + `</p>
+            <!--<button onclick="check(${this}, '${topic}', ${ans})">Check this answer</button>-->
           </div>`;
+
+          
         document.getElementById(topic).innerHTML = template;
         
       }
@@ -200,21 +187,25 @@
       template = "";
     }  
 
-      function check(thistopic, correctanswer) {
-
-        let temp = thistopic + "-select";
-        let answervalue = document.getElementById(temp).value;
+      function check(buttonObj, answervalue, correctanswer) {
         if (+answervalue == +correctanswer) {
-          alert("Correct");
+          buttonObj.style.color = 'green';
+          buttonObj.closest('[data-id]').style = 'border-color: green !important';
+        
         } else {
-          alert("Not Correct");
+          buttonObj.style.color = 'red';
+          buttonObj.closest('[data-id]').style = 'border-color: red !important';
+          
         }
+        buttonObj.closest('p').querySelectorAll('button').forEach((btn) => {
+            btn.disabled = true;
+          })
       }
 
-      function move(button, current, next) {
-        let topic = button.closest('.row').id;
-        console.log(topic);
-      };
+      // function move(button, current, next) {
+      //   let topic = button.closest('.row').id;
+      //   console.log(topic);
+      // };
     </script>
     <!-- Bootstrap core JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
