@@ -36,6 +36,7 @@ All tasks are subject to change.
 ### **AM**
 
 **Sprint 1/2**
+- [ ] Add margins around questions for proper mobile view
 - [ ] Show button to display summary page
 - [ ] Display leaderboard using values available (line 101 for sorting)
 - [ ] Save metrics after each click/summary page load
