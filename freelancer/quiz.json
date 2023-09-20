@@ -1,15 +1,19 @@
-var mydata = {
-	"jillsquiz": [{
-			"topic": "history",
-			"quizquestions": [{
+var myquizquestions = {
+
+	"history": {
+			"quizquestions": [
+				
+			{
 				"question": "Which Roman Emperor did Vespasian succeed?",
 				"answers": [
-					"‎Vitellius",
+					"Vitellius",
 					"Julius",
 					"Nero"
 				],
 				"correct_answer": 1
-			}, {
+			},
+			
+			{
 				"question": "What is the name of the distinctive red pottery found on roman sites?",
 				"answers": [
 					"Ruby glass",
@@ -17,11 +21,17 @@ var mydata = {
 					"Denbeigh ware"
 				],
 				"correct_answer": 2
-			}]
+			},
+		
+			]
 		},
-		{
-			"topic": "geography",
-			"quizquestions": [{
+
+
+	"geography": {
+
+			"quizquestions": [
+			
+			{
 				"question": "which is the UK's second biggest city?",
 				"answers": [
 					"Glasgow",
@@ -29,7 +39,9 @@ var mydata = {
 					"Birmingham"
 				],
 				"correct_answer": 3
-			}, {
+			},
+			
+			{
 				"question": "which is the UK's smallest shire?",
 				"answers": [
 					"Renfrewshire",
@@ -37,11 +49,15 @@ var mydata = {
 					"Theshire"
 				],
 				"correct_answer": 2
-			}]
-		},
-		{
-			"topic": "flowers",
-			"quizquestions": [{
+			},
+		
+		]
+	},
+
+	"flowers": {
+			"quizquestions": [
+			
+			{
 				"question": "which flower is associated with remembrance?",
 				"answers": [
 					"Rose",
@@ -49,7 +65,9 @@ var mydata = {
 					"Poppy"
 				],
 				"correct_answer": 3
-			}]
-		}
-	]
+			}
+		
+		]
+	},
+	
 }
