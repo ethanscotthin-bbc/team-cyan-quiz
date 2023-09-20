@@ -32,7 +32,7 @@ All tasks are subject to change.
 - [ ] Set boundaries between the first and the last - check for result being less than or greater than index of questions
 - [ ] If index of 0, hide the previous button
 - [ ] If on last, hide previous and next buttons
-- [ ]  On a next click whilst on the last question, go to (unshow) results page (with data-id of last index + 1)
+- [ ] On a next click whilst on the last question, go to (unshow) results page (with data-id of last index + 1)
 - [ ] On a valid move, add hidden class on the previous and remove it from the next question
 
 > Add previous and next buttons
