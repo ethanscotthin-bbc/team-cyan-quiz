@@ -1,1 +1,9 @@
-var
+var thisattempt = [
+    {
+    "QdataID": "0",
+    "QNumber": "0",
+    "answer": false 
+    }
+]
+
+var textfordisplay = "Test"
