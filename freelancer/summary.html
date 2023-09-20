@@ -83,12 +83,18 @@
         <p class="pre-wrap masthead-subheading font-weight-light mb-0" id="subheadingscores">
           "wrong"
         </p>
-         <!-- Display text based on user scores pulled from file-->
-      <script src="metrics.json">
+         <!--calculate user scores and display info-->
+          <script src="metrics.json"></script>
+          <script>
+          let scoretotal = 0
+          console.log(scoretotal)
+          for (let x in thisattempt) {
+          if (thisattempt[x].correctanswer = true) {
+          console.log(addedcorrectaanswer)
+          scoretotal +=1
+            }
+          }
       </script>
-      <script>
-        document.getElementById("subheadingscores").innerHTML=textfordisplay  
-        </script>
       </div>
     </header>
     <section class="page-section bg-primary text-white mb-0" id="questions">
@@ -115,8 +121,9 @@
       ></a>
     </div>
 
-    
-    </script>
+
+document.getElementById("subheadingscores").innerHTML=textfordisplay  
+</script>
     <!-- Bootstrap core JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
