@@ -5,24 +5,59 @@ var quiz = {
 			"quizquestions": [
 				
 			{
-				"question": "Which Roman Emperor did Vespasian succeed?",
+				"question": "Who was the US president at the start of the Great Depression",
 				"answers": [
-					"Vitellius",
-					"Julius",
-					"Nero"
+					"Woodrow Wilson",
+					"Franklin D Roosevelt",
+					"Herbert Hoover",
+					"Calvin Coolidge"
 				],
-				"correct_answer": 1
+				"correct_answer": 3
 			},
 			
 			{
-				"question": "What is the name of the distinctive red pottery found on roman sites?",
+				"question": "Founded by Greek Settlers in 600 BCE, what is the oldest city in France",
 				"answers": [
-					"Ruby glass",
-					"Samian ware",
-					"Denbeigh ware"
+					"Dunkirk",
+					"Nice",
+					"Lyon",
+					"Marseille"
 				],
-				"correct_answer": 2
+				"correct_answer": 4
 			},
+
+			{
+                "question": "Who’s assassination led to the start of the First World War?",
+                "answers": [
+                    "Archduke Franz Ferdinand",
+                    "President John F Kennedy",
+                    "King Alexander II of Russia",
+                    "Dictator Julius Caesar"
+                ],
+                "correct_answer": 1
+            },
+
+            {
+                "question": "What title did Oliver Cromwell take after a series of victories in the English Civil War",
+                "answers": [
+                    "Prime Minister",
+                    "Lord Protector",
+                    "King of England",
+                    "Emperor of Britain"
+                ],
+                "correct_answer": 2
+            },
+
+            {
+                "question": "Who was the first US president to be impeached?",
+                "answers": [
+                    "Bill Clinton",
+                    "Richard Nixon",
+                    "Andrew Johnson",
+                    "George Washington"
+                ],
+                "correct_answer": 3
+            },
 
 			
 		
