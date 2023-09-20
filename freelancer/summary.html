@@ -39,27 +39,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item mx-0 mx-lg-1">
-              <a
-                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                href="#portfolio"
-                >History</a
-              >
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a
-                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                href="#about"
-                >Geography</a
-              >
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a
-                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                href="#contact"
-                >Flowers</a
-              >
-            </li>
+            
           </ul>
         </div>
       </div>
@@ -88,9 +68,10 @@
           <script>
           let scoretotal = 0
           let numquestions = 0
-          for (let x in thisattempt) {
+          //TODO: questionAttempt into locaStorage
+          for (let x in questionAttempt) {
 
-            if (thisattempt[x].correctanswer == true)
+            if (questionAttempt[x].correctanswer == true)
             {
               scoretotal +=1
               numquestions +=1
