@@ -36,9 +36,9 @@ All tasks are subject to change.
 ### **AM**
 
 **Sprint 1/2**
-- [ ] Put new questions on JSON
 - [ ] Show button to display summary page
 - [ ] Display leaderboard using values available (line 101 for sorting)
 - [ ] Save metrics after each click/summary page load
+  - [ ] Specific metrics
 - [ ] Log topics selected
 - [ ] Test to ensure that the leaderboard updates correctly
