@@ -10,17 +10,9 @@ All tasks are subject to change.
 **Sprint 1**
 > Research 4-5 questions for the first question topic and add to quiz.JSON
 
-<!-- > Split each category of quiz into separate HTML documents
-- [ ] Copy basic template of index.html onto 7 new HTML files
-- [ ] Add title of category
-- [ ] Add quiz question template via inline javascript (linked in the footer of all pages) -->
-
 > Add 7 categories/sections onto the homepage
-- [ ] Add a unique id to each section tag which corresponds to the topic name in quiz.JSON
-- [ ] Add title of topic to seciton (possibly dynamic?)
-
-> Add identifier for each question page
-- [ ] Use `<hidden>` tag for the name of the topic page which corresponds to the `topic` attribute in quiz.JSON
+- [x] Add a unique id to each section tag which corresponds to the topic name in quiz.JSON
+- [x] Add title of topic to section
 
 > Loop through each question in the topic and create a page for each.
 - [ ] Add hidden class to all but the first question
