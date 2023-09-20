@@ -68,7 +68,7 @@
   })(jQuery); // End of use strict
   
 // Section tags
-let sections = document.querySelectorAll('section');
+let sections = document.getElementById('topics').querySelectorAll('section > section');
 let listLength = sections.length;
 
 sections.forEach((e, i) => {
