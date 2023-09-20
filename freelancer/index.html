@@ -64,7 +64,7 @@
         </div>
       </div>
     </nav>
-    <header class="masthead bg-primary text-white text-center">
+    <header class="masthead bg-primary text-black text-center">
       <div class="container d-flex align-items-center flex-column">
         <!-- Masthead Avatar Image--><img
           class="masthead-avatar mb-5"
@@ -72,7 +72,7 @@
           alt=""
         />
         <!-- Masthead Heading-->
-        <h1 class="masthead-heading mb-0">Python quiz client</h1>
+        <h1 class="masthead-heading mb-0">Quiz</h1>
         <!-- Icon Divider-->
         <div class="divider-custom divider-light">
           <div class="divider-custom-line"></div>
@@ -80,12 +80,12 @@
           <div class="divider-custom-line"></div>
         </div>
         <!-- Masthead Subheading-->
-        <p class="pre-wrap masthead-subheading font-weight-light mb-0">
+        <p class="masthead-subheading font-weight-light mb-0">
           Team Cyan 2023
         </p>
       </div>
     </header>
-    <section class="page-section bg-primary text-white mb-0" id="questions">
+    <section class="text-black" id="topics">
       <div class="container">
 
         <div class="text-center">
@@ -115,14 +115,13 @@
       var template = "";
 
       for (const element in quiz) {
-        console.log(element);
-
+        
         template = template + `<section class="page-section">
       <div class="container">
         <!-- Section Heading-->
         <div class="text-center">
           <h2 class="page-section-heading text-secondary mb-0 d-inline-block">
-            ${element}
+            ${element.toUpperCase()}
           </h2>
         </div>
         <!-- Icon Divider-->
@@ -148,7 +147,7 @@
 
 
        
-      document.getElementById("questions").innerHTML = template;
+      document.getElementById("topics").innerHTML = template;
       
     </script>
 
@@ -166,13 +165,14 @@
         let ans1 = element.answers[0];
         let ans2 = element.answers[1];
         let ans3 = element.answers[2];
+
   
 
-        template = template + `<div class="col-lg-12 ml-auto">
+        template = template + `<div class="col-lg-12 ml-auto ${((index === 0) ? '':'hidden')} data-id=${index}">
             <p class="pre-wrap lead">Question - ${ques}</p>
             <p class="pre-wrap lead">
-                <label for="${element}">Choose an answer:</label>
-                <select name="${element}" id="${element}">
+                <label for="${topic}">Choose an answer:</label>
+                <select name="${topic}" id="${topic}-select">
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -183,8 +183,9 @@
                     <li>${ans3}</li>
                 </ol>
             </p>
-            <button onclick="check('${element}', ${ans})">Check this answer</button>
+            <button onclick="check('${topic}', ${ans})">Check this answer</button>
             <br/><br/>
+            <button onclick="move(this, ${index}, ${index++})">Next</button>
           </div>`;
         document.getElementById(topic).innerHTML = template;
         
@@ -193,19 +194,24 @@
       
       );
       template = "";
-    }
-      
-
-      
+    }  
 
       function check(thistopic, correctanswer) {
-        let answervalue = document.getElementById(thistopic).value;
+
+        let temp = thistopic + "-select";
+        let answervalue = document.getElementById(temp).value;
         if (+answervalue == +correctanswer) {
           alert("Correct");
         } else {
           alert("Not Correct");
         }
+        current++;
       }
+
+      function move(button, current, next) {
+        let topic = button.closest('.row').id;
+        console.log(topic);
+      };
     </script>
     <!-- Bootstrap core JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
