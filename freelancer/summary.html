@@ -84,12 +84,15 @@
           "wrong"
         </p>
          <!--calculate user scores and display info-->
-          <script src="metrics.json"></script>
+          <script src="metrics.json">
+          </script>
           <script>
           let scoretotal = 0
-          console.log(scoretotal)
+          console.log(1)
+          console.log(textfordisplay)
           for (let numQ in thisattempt) {
-          if (thisattempt[numQ].correctanswer = true) {
+          console.log(numQ)
+            if (thisattempt[numQ].correctanswer = true) {
             console.log("addedcorrectaanswer")
             scoretotal +=1
             }
@@ -121,9 +124,6 @@
         ><i class="fa fa-chevron-up"></i
       ></a>
     </div>
-
-
-document.getElementById("subheadingscores").innerHTML=textfordisplay  
 </script>
     <!-- Bootstrap core JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
