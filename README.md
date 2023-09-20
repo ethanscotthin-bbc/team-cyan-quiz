@@ -1,7 +1,8 @@
 # team-cyan-quiz
 ## Quick links
 ## Naming conventions
-
+### CSS
+[Naming conventions](https://www.freecodecamp.org/news/css-naming-conventions-that-will-save-you-hours-of-debugging-35cea737d849/)
 ### JavaScript
 [Naming Conventions](https://work-blog.gitbook.io/project/programming-tips/nodejs/ecmascript-naming-conventions)
 ## Unit Testing
