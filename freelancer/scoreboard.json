@@ -1,1 +1,5 @@
-var
+var leaderboard = {
+    "coel": 2,
+    "ethan": 3,
+}
+

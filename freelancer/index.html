@@ -89,8 +89,30 @@
     </div>
 
     <script type="text/javascript" src="quiz.json"></script>
+    <script type="text/javascript" src="scoreboard.json"></script>
+
+
 
     <script type="text/javascript">
+
+      // ITS HERE
+
+
+      var keyValues = []
+
+      for (var key in leaderboard) {
+        keyValues.push([key, leaderboard[key]])
+      }
+
+      keyValues.sort(function compare(kv1, kv2) {
+        // This comparison function has 3 return cases:
+        // - Negative number: kv1 should be placed BEFORE kv2
+        // - Positive number: kv1 should be placed AFTER kv2
+        // - Zero: they are equal, any order is ok between these 2 items
+        return kv2[1] - kv1[1]
+      })
+
+      console.log(keyValues);
 
       var template = ""
 
@@ -155,6 +177,19 @@
     <script>
       var template = "";
 
+      // If not already exists, add choice to save data to localStorage
+      let saveData;
+      if (localStorage.getItem('saveData') === null) {
+        if (confirm("Would you like to save your scores?")) {
+          saveData = true;
+          let username = prompt('Enter your username')
+          localStorage.setItem('username', username);
+        } else {
+          saveData = false;
+        }
+        localStorage.setItem('saveData', saveData);
+      }
+
       for (const topic in quiz) {
         quiz[topic].quizquestions.forEach((element, questionIndex) => {
 
@@ -176,13 +211,11 @@
         document.getElementById(topic).innerHTML = template;
         
       }
-    
-      
       );
       template = "";
 
-      // Initialise dictionary and inner array in 
-      let blankMetrics = new Array(quiz[topic].quizquestions.length).fill(false);
+      // Initialise dictionary and inner array in
+      let blankMetrics = new Array(quiz[topic].quizquestions.length).fill(null);
       localStorage.setItem(`${topic}Metrics`, JSON.stringify(blankMetrics))
     }  
 
@@ -195,6 +228,10 @@
           buttonObj.style.color = 'green';
           buttonObj.closest('[data-id]').style = 'border-color: green !important';
         } else {
+          let currentLocal = JSON.parse(localStorage.getItem(`${topic}Metrics`));
+          console.log(currentLocal);
+          currentLocal[questionIndex] = false;
+          localStorage.setItem(`${topic}Metrics`, JSON.stringify(currentLocal));
           buttonObj.style.color = 'red';
           buttonObj.closest('[data-id]').style = 'border-color: red !important';
           
@@ -203,11 +240,6 @@
             btn.disabled = true;
           })
       }
-
-      // function move(button, current, next) {
-      //   let topic = button.closest('.row').id;
-      //   console.log(topic);
-      // };
     </script>
     <!-- Bootstrap core JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
