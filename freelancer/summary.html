@@ -88,16 +88,23 @@
           </script>
           <script>
           let scoretotal = 0
-          console.log(1)
-          console.log(textfordisplay)
-          for (let numQ in thisattempt) {
-          console.log(numQ)
-            if (thisattempt[numQ].correctanswer = true) {
-            console.log("addedcorrectaanswer")
-            scoretotal +=1
+          let numquestions = 0
+          for (let x in thisattempt) {
+
+            if (thisattempt[x].correctanswer == true)
+            {
+              scoretotal +=1
+              numquestions +=1
+            }
+
+            else
+            {
+              numquestions+=1
             }
           }
-          document.getElementById("subheadingscores").innerHTML=("Well done you got ", scoretotal, " out of ", numQ," questions correct")
+          console.log("score ",scoretotal)
+          let outputtext = ("Well done! You got " + scoretotal + " out of " + numquestions + " questions correct")
+          document.getElementById("subheadingscores").innerHTML=(outputtext)
       </script>
       </div>
     </header>
