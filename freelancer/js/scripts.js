@@ -71,8 +71,8 @@
 let sections = document.querySelectorAll('section');
 let listLength = sections.length;
 
-flexContainers.forEach((e, i) => {
-    if (i % 2 != 1) {
+sections.forEach((e, i) => {
+    if (i % 2 != 0) {
         // Add bg-primary for all odd indexes that are reversed
         e.classList.add('bg-primary');
     }
