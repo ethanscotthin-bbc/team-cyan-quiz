@@ -243,7 +243,7 @@ var quiz = {
 					"Nuclear Explosions (Prohibition and Inspections) Act 1998",
 					"Lettuce and Similar Vegetables Act 1909"
 				],
-				"correct_answer": 3
+				"correct_answer": 4
 			},
 			{
 				"question": "What is the age of criminal responsibility in England and Wales?",
