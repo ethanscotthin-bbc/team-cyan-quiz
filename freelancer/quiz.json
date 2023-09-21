@@ -57,54 +57,332 @@ var quiz = {
                 ],
                 "correct_answer": 3
             },
-
-			
-		
 			]
 		},
-
-
 	"geography": {
 
 			"quizquestions": [
 			
 			{
-				"question": "which is the UK's second biggest city?",
+				"question": "Which of these is a member state of the UN?",
 				"answers": [
-					"Glasgow",
-					"Cardiff",
-					"Birmingham"
+					"Vatican City",
+					"Greenland",
+					"Kosovo",
+					"Cyprus"
 				],
-				"correct_answer": 3
+				"correct_answer": 4
 			},
-			
 			{
-				"question": "which is the UK's smallest shire?",
+				"question": "Where is São Tomé and Príncipe Located?",
 				"answers": [
-					"Renfrewshire",
-					"Diddyshire",
-					"Theshire"
+					"The Caribbean",
+					"Africa",
+					"Asia",
+					"Oceania"
 				],
 				"correct_answer": 2
 			},
-		
-		]
-	},
-
-	"flowers": {
-			"quizquestions": [
-			
 			{
-				"question": "which flower is associated with remembrance?",
+				"question": "Which of these countries has the smallest population?",
 				"answers": [
-					"Rose",
-					"Geranium",
-					"Poppy"
+					"Brazil",
+					"Russia",
+					"Indonesia",
+					"Nigeria"
+				],
+				"correct_answer": 2
+			},
+			{
+				"question": "What is the Capital City of Morocco?",
+				"answers": [
+					"Rabat",
+					"Casablanca",
+					"Marrakesh",
+					"Tangier"
+				],
+				"correct_answer": 1
+			},
+			{
+				"question": "Which of these is NOT one of South Africa's Capital Cities?",
+				"answers": [
+					"Bloemfontein",
+					"Pretoria",
+					"Johannesberg",
+					"Cape Town"
 				],
 				"correct_answer": 3
-			}
-		
+			},
 		]
 	},
-	
+	"Politics": {
+		"quizquestions": [
+			{
+				"question": "How many seats in the UK House of Commons does it take to hold a majority?",
+				"answers": [
+					"326",
+					"341",
+					"306",
+					"289"
+				],
+				"correct_answer": 1
+			},
+			{
+				"question": "What is the official residence of the Chancellor of the Exchequer?",
+				"answers": [
+					"11 Downing Street",
+					"4 Downing Street",
+					"10 Dawson Street",
+					"The Houses of Parliament"
+				],
+				"correct_answer": 1
+			},
+			{
+				"question": "How many days did Liz Truss serve as Prime Minister?",
+				"answers": [
+					"32",
+					"44",
+					"47",
+					"58"
+				],
+				"correct_answer": 2
+			},
+			{
+				"question": "Which Constituency does PM Rishi Sunak represent?",
+				"answers": [
+					"South West Norfolk",
+					"Richmond",
+					"Southhampton",
+					"Dartford"
+				],
+				"correct_answer": 3
+			},
+			{
+				"question": "What is the current fourth largest party in the UK Parliament?",
+				"answers": [
+					"Green",
+					"Co-operative",
+					"Liberal Democrat",
+					"SNP"
+				],
+				"correct_answer": 2
+			},
+		]
+	},
+	"Conservation": {
+		"quizquestions": [
+			{
+				"question": "More than half of breathable oxygen on Earth is produced by what?",
+				"answers": [
+					"Oceans",
+					"Forests",
+					"The Polar Ice Caps",
+					"Clouds"
+				],
+				"correct_answer": 1
+			},
+			{
+				"question": "What percentage of New Zealand’s birds are not found anywhere else in the world?",
+				"answers": [
+					"25%",
+					"1%",
+					"70%",
+					"40%"
+				],
+				"correct_answer": 3
+			},
+			{
+				"question": "Which large cat's name comes from a local word meaning 'he who kills with one leap'?",
+				"answers": [
+					"Puma",
+					"Jaguar",
+					"Cheetah",
+					"Leopard"
+				],
+				"correct_answer": 2
+			},
+			{
+				"question": "What crop is the largest course of deforestation in Indonesia?",
+				"answers": [
+					"Rubber Trees",
+					"Bamboo",
+					"Pineapples",
+					"Oil Palms"
+				],
+				"correct_answer": 4
+			},
+			{
+				"question": "The Amazon Rainforest is the Largest in the world, what is the second largest?",
+				"answers": [
+					"Australasia",
+					"Congo",
+					"Sundaland",
+					"Indo-Burma"
+				],
+				"correct_answer": 2
+			},
+		]
+	},
+	"Law": {
+		"quizquestions": [
+			{
+				"question": "More than half of breathable oxygen on Earth is produced by what?",
+				"answers": [
+					"Oceans",
+					"Forests",
+					"The Polar Ice Caps",
+					"Clouds"
+				],
+				"correct_answer": 1
+			},
+			{
+				"question": "What percentage of New Zealand’s birds are not found anywhere else in the world?",
+				"answers": [
+					"25%",
+					"1%",
+					"70%",
+					"40%"
+				],
+				"correct_answer": 3
+			},
+			{
+				"question": "Which large cat's name comes from a local word meaning 'he who kills with one leap'?",
+				"answers": [
+					"Puma",
+					"Jaguar",
+					"Cheetah",
+					"Leopard"
+				],
+				"correct_answer": 2
+			},
+			{
+				"question": "What crop is the largest course of deforestation in Indonesia?",
+				"answers": [
+					"Rubber Trees",
+					"Bamboo",
+					"Pineapples",
+					"Oil Palms"
+				],
+				"correct_answer": 4
+			},
+			{
+				"question": "The Amazon Rainforest is the Largest in the world, what is the second largest?",
+				"answers": [
+					"Australasia",
+					"Congo",
+					"Sundaland",
+					"Indo-Burma"
+				],
+				"correct_answer": 2
+			},
+		]
+	},
+	"Sport": {
+		"quizquestions": [
+			{
+				"question": "More than half of breathable oxygen on Earth is produced by what?",
+				"answers": [
+					"Oceans",
+					"Forests",
+					"The Polar Ice Caps",
+					"Clouds"
+				],
+				"correct_answer": 1
+			},
+			{
+				"question": "What percentage of New Zealand’s birds are not found anywhere else in the world?",
+				"answers": [
+					"25%",
+					"1%",
+					"70%",
+					"40%"
+				],
+				"correct_answer": 3
+			},
+			{
+				"question": "Which large cat's name comes from a local word meaning 'he who kills with one leap'?",
+				"answers": [
+					"Puma",
+					"Jaguar",
+					"Cheetah",
+					"Leopard"
+				],
+				"correct_answer": 2
+			},
+			{
+				"question": "What crop is the largest course of deforestation in Indonesia?",
+				"answers": [
+					"Rubber Trees",
+					"Bamboo",
+					"Pineapples",
+					"Oil Palms"
+				],
+				"correct_answer": 4
+			},
+			{
+				"question": "The Amazon Rainforest is the Largest in the world, what is the second largest?",
+				"answers": [
+					"Australasia",
+					"Congo",
+					"Sundaland",
+					"Indo-Burma"
+				],
+				"correct_answer": 2
+			},
+		]
+	},
+	"Celebrity": {
+		"quizquestions": [
+			{
+				"question": "More than half of breathable oxygen on Earth is produced by what?",
+				"answers": [
+					"Oceans",
+					"Forests",
+					"The Polar Ice Caps",
+					"Clouds"
+				],
+				"correct_answer": 1
+			},
+			{
+				"question": "What percentage of New Zealand’s birds are not found anywhere else in the world?",
+				"answers": [
+					"25%",
+					"1%",
+					"70%",
+					"40%"
+				],
+				"correct_answer": 3
+			},
+			{
+				"question": "Which large cat's name comes from a local word meaning 'he who kills with one leap'?",
+				"answers": [
+					"Puma",
+					"Jaguar",
+					"Cheetah",
+					"Leopard"
+				],
+				"correct_answer": 2
+			},
+			{
+				"question": "What crop is the largest course of deforestation in Indonesia?",
+				"answers": [
+					"Rubber Trees",
+					"Bamboo",
+					"Pineapples",
+					"Oil Palms"
+				],
+				"correct_answer": 4
+			},
+			{
+				"question": "The Amazon Rainforest is the Largest in the world, what is the second largest?",
+				"answers": [
+					"Australasia",
+					"Congo",
+					"Sundaland",
+					"Indo-Burma"
+				],
+				"correct_answer": 2
+			},
+		]
+	}
 }
