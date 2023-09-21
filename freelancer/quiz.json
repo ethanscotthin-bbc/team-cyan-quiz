@@ -331,7 +331,7 @@ var quiz = {
 			},
 		]
 	},
-	"Celebrity": {
+	"Celebrities": {
 		"quizquestions": [
 			{
 				"question": "What is Rihanna's real name?",
