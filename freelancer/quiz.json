@@ -280,108 +280,108 @@ var quiz = {
 	"Sport": {
 		"quizquestions": [
 			{
-				"question": "More than half of breathable oxygen on Earth is produced by what?",
+				"question": " Where were the first modern Summer Olympic Games held (1896)?",
 				"answers": [
-					"Oceans",
-					"Forests",
-					"The Polar Ice Caps",
-					"Clouds"
+					"Rome, Italy",
+					"Athens, Greece",
+					"Koenigsberg, Prussia",
+					"New York, USA"
+				],
+				"correct_answer": 2
+			},
+			{
+				"question": "What is the name of the first and only racehorse to win the Grand National 3 times?",
+				"answers": [
+					"Red Rum",
+					"Blue Marble%",
+					"Green Ticket",
+					"White Paper"
 				],
 				"correct_answer": 1
 			},
 			{
-				"question": "What percentage of New Zealand’s birds are not found anywhere else in the world?",
+				"question": "What sport takes place in a velodrome?",
 				"answers": [
-					"25%",
-					"1%",
-					"70%",
-					"40%"
+					"Cycling",
+					"Rowing",
+					"Running",
+					"High Jump"
+				],
+				"correct_answer": 1
+			},
+			{
+				"question": "What is the national sport of Japan?",
+				"answers": [
+					"Basketball",
+					"Sumo Wrestling",
+					"Cricket",
+					"Baseball"
+				],
+				"correct_answer": 2
+			},
+			{
+				"question": "Which French City is known for its 24 hour motor race?",
+				"answers": [
+					"Le Havre",
+					"Marseille",
+					"Le Mans",
+					"St Etienne"
 				],
 				"correct_answer": 3
-			},
-			{
-				"question": "Which large cat's name comes from a local word meaning 'he who kills with one leap'?",
-				"answers": [
-					"Puma",
-					"Jaguar",
-					"Cheetah",
-					"Leopard"
-				],
-				"correct_answer": 2
-			},
-			{
-				"question": "What crop is the largest course of deforestation in Indonesia?",
-				"answers": [
-					"Rubber Trees",
-					"Bamboo",
-					"Pineapples",
-					"Oil Palms"
-				],
-				"correct_answer": 4
-			},
-			{
-				"question": "The Amazon Rainforest is the Largest in the world, what is the second largest?",
-				"answers": [
-					"Australasia",
-					"Congo",
-					"Sundaland",
-					"Indo-Burma"
-				],
-				"correct_answer": 2
 			},
 		]
 	},
 	"Celebrity": {
 		"quizquestions": [
 			{
-				"question": "More than half of breathable oxygen on Earth is produced by what?",
+				"question": "What is Rihanna's real name?",
 				"answers": [
-					"Oceans",
-					"Forests",
-					"The Polar Ice Caps",
-					"Clouds"
+					"Alexa Schwarz",
+					"Robyn Fenty",
+					"Rihanna",
+					"Christine Buller"
 				],
-				"correct_answer": 1
+				"correct_answer": 2
 			},
 			{
-				"question": "What percentage of New Zealand’s birds are not found anywhere else in the world?",
+				"question": "Who was the first winner of The Masked Singer?",
 				"answers": [
-					"25%",
-					"1%",
-					"70%",
-					"40%"
+					"Christ Daughtry",
+					"Donny Osmond",
+					"T-Pain",
+					"Wayne Brady"
 				],
 				"correct_answer": 3
 			},
 			{
-				"question": "Which large cat's name comes from a local word meaning 'he who kills with one leap'?",
+				"question": "Who did forbes name the youngest \"self made billionaire ever\" in 2019?",
 				"answers": [
-					"Puma",
-					"Jaguar",
-					"Cheetah",
-					"Leopard"
-				],
-				"correct_answer": 2
-			},
-			{
-				"question": "What crop is the largest course of deforestation in Indonesia?",
-				"answers": [
-					"Rubber Trees",
-					"Bamboo",
-					"Pineapples",
-					"Oil Palms"
+					"Elon Musk",
+					"Taylor Swift",
+					"Mark Zuckerberg",
+					"Kylie Jenner"
 				],
 				"correct_answer": 4
 			},
 			{
-				"question": "The Amazon Rainforest is the Largest in the world, what is the second largest?",
+				"question": "What was the name of the first James Bond movie in which Daniel Craig appeared?",
 				"answers": [
-					"Australasia",
-					"Congo",
-					"Sundaland",
-					"Indo-Burma"
+					"Casino Royale",
+					"Spectre",
+					"Die Another Day",
+					"Skyfall"
 				],
-				"correct_answer": 2
+				"correct_answer": 1
+			},
+			{
+				"question": "Which iconic singer-songwriter was born Robert Allen Zimmerman in 1941?",
+				"answers": [
+					"Jimi Hendrix",
+					"Smokey Robinson",
+					"Bob Dylan",
+					"Ringo Starr"
+				],
+				"correct_answer": 3
 			},
 		]
 	}
