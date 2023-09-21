@@ -293,7 +293,7 @@ var quiz = {
 				"question": "What is the name of the first and only racehorse to win the Grand National 3 times?",
 				"answers": [
 					"Red Rum",
-					"Blue Marble%",
+					"Blue Marble",
 					"Green Ticket",
 					"White Paper"
 				],
