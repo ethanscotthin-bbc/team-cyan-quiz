@@ -71,8 +71,6 @@
           
         </div>
     </section>
-
-
     <!-- Copyright Section-->
     <section class="copyright py-4 text-center text-white">
       <div class="container">
@@ -90,16 +88,9 @@
 
     <script type="text/javascript" src="quiz.json"></script>
     <script type="text/javascript" src="scoreboard.json"></script>
-
-
-
+    <!-- <script src=metrics.json></script> -->
     <script type="text/javascript">
-
       // ITS HERE
-
-
-      
-
       var template = ""
 
       for (const element in quiz) {
@@ -111,15 +102,10 @@
               >
             </li>`
       }
-
       document.getElementById("navbarResponsiveItems").innerHTML = template;
-    
-
     </script>
 
     <script type="text/javascript">
-
-
       var template = "";
 
       for (const element in quiz) {
@@ -147,18 +133,15 @@
           class="row"
           id="${element}"
         ></div>
-     </div>
+        <div class="text-center">
+          <a href='summary.html?topic=${element.toLowerCase()}' id='${element}-summary-button' class="btn btn-outline-dark btn-lg m-1 hidden">Summary</a>
+        </div>
+        </div>
     </section>`;
 
       }
-
-
-       
       document.getElementById("topics").innerHTML = template;
-      
     </script>
-
-<script src=metrics.json>
 </script>
     <script>
       var template = "";
@@ -182,7 +165,7 @@
         let ques = element.question;
         let ans = element.correct_answer;
 
-        template = template + `<div class="col-lg-12 ml-auto py-4 border border-dark rounded mb-3" data-id="${questionIndex}">
+        template = template + `<div class="col-lg-12 py-4 border border-dark rounded mb-3 m-3" data-id="${questionIndex}">
             <p class="pre-wrap lead">Question - ${ques}</p>
             <p class="pre-wrap lead" id="${topic}-select">`
         element.answers.forEach((answer, internalIndex) => {
@@ -190,26 +173,16 @@
         });
 
         template = template + `</div>`
-        
-        template += `<a href='summary.html?topic=${topic.toLowerCase()}' id='${topic}-summary-button'>Summary</a>`
-
-          
         document.getElementById(topic).innerHTML = template;
-        
       }
+      
       );
       template = "";
-
 
       // Initialise dictionary and inner array in
       let blankMetrics = new Array(quiz[topic].quizquestions.length).fill(null);
       localStorage.setItem(`${topic.toLowerCase()}Metrics`, JSON.stringify(blankMetrics))
     }  
-    
-
-      function goToSummary(topic) {
-        
-      }
 
       function check(buttonObj, answervalue, correctanswer, questionIndex, topic) {
 
@@ -221,15 +194,17 @@
           currentLocal[questionIndex] = true;
           localStorage.setItem(`${topic}Metrics`, JSON.stringify(currentLocal));
           
-          console.log(alltimeglobalstats.totalcorrect)
-          let jsondata = require('/metrics.json')
-          console.log(jsondata)
-          let parsedata = JSON.parse(jsondata)
-          console.log(parsedata)
-          parsedata.alltimeglobalstats.push({
-            totalcorrect: alltimeglobalstats.totalcorrect+1
-          })
-          console.log(alltimeglobalstats.totalcorrect)
+          // const fs = require('fs')
+          // console.log(alltimeglobalstats.totalcorrect)
+          // let jsondata = fs.readFileSync('/scoreboard.json')
+          // console.log(jsondata)
+          // let parsedata = JSON.parse(jsondata)
+          // console.log(parsedata)
+          // parsedata.alltimeglobalstats.push({
+          //   totalcorrect: alltimeglobalstats.totalcorrect+1
+          // })
+          // console.log(alltimeglobalstats.totalcorrect)
+
           // Add style to answer
           buttonObj.style.color = 'green';
           buttonObj.closest('[data-id]').style = 'border-color: green !important; border-width: thick !important;';
@@ -239,8 +214,6 @@
           currentLocal[questionIndex] = false;
           localStorage.setItem(`${topic}Metrics`, JSON.stringify(currentLocal));
           
-          console.log(alltimeglobalstats.totalincorrect)
-          alltimeglobalstats.totalincorrect+=1
           // Add style to answer
           buttonObj.style.color = 'red';
           buttonObj.closest('[data-id]').style = 'border-color: red !important; border-width: thick !important;';
@@ -250,6 +223,18 @@
         buttonObj.closest('p').querySelectorAll('button').forEach((btn) => {
             btn.disabled = true;
           })
+
+        let currentLocal = JSON.parse(localStorage.getItem(`${topic}Metrics`));
+        let nullFlag = false;
+        for (let a in currentLocal) {
+          if (currentLocal[a] === null) {
+            nullFlag = true;
+            return
+          }
+        }
+        if (nullFlag === false) {
+          document.getElementById(`${topic}-summary-button`).style.display = 'inline';
+        }
       }
     </script>
     <!-- Bootstrap core JS-->

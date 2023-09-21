@@ -1,13 +1,12 @@
 var textfordisplay = "Test"
 var alltimeglobalstats ={
-    "numberofusers":0,
-    "quizzestaken":0,
-    "totalcorrect":0,
+    "quizzestaken":0, /*recorded on submit*/
+    "totalcorrect":0, /*recorded after question select*/
     "totalincorrect":0,
-    "morning": 0,
+    "morning": 0, /*recorded on submit*/
     "afternoon": 0,
     "evening": 0,
-    "numhistory":0,
+    "numhistory":0,/*recorded after question select*/
     "numgeo":0,
     "numpolitics":0,
     "numconserv":0,

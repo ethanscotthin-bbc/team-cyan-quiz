@@ -68,15 +68,11 @@
         </div>
         <!-- Masthead Subheading-->
         <p class="masthead-subheading font-weight-light mb-0" id="subheadingscores">
-          "wrong"
+          scores not loaded
         </p>
          <!--calculate user scores and display info-->
           <script src="metrics.json"></script>
           <script src="scoreboard.json"></script>
-
-         
-          
-
           <script>
           const queryString = window.location.search;
           const urlParams = new URLSearchParams(queryString);
@@ -88,7 +84,6 @@
             {
               scoretotal += 1
             }
-
           }
           let outputtext = ("Well done! You got " + scoretotal + " out of " + userscores.length + " questions correct")
           document.getElementById("subheadingscores").innerHTML = (outputtext)
@@ -98,7 +93,7 @@
     </header>
     <section class="page-section bg-primary text-white mb-0">
       <div class="container">
-
+        <!--
         <div class="text-center">
           <h2>
             Leaderboard
@@ -108,8 +103,9 @@
           </div>      
           
         </div>
+      -->
     </section>
-
+<!--
     <script>
       let template = ""
       var keyValues = []
@@ -148,6 +144,7 @@
         
 
       </script>
+    -->
    
 
     <!-- Copyright Section-->
