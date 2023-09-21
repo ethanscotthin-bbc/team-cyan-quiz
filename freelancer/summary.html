@@ -39,7 +39,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            
+            <li class="nav-item mx-0 mx-lg-1">
+              <a
+                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                href="index.html"
+                >RETURN HOME</a
+              >
+            </li>
           </ul>
         </div>
       </div>
@@ -62,45 +68,18 @@
         <p class="masthead-subheading font-weight-light mb-0" id="subheadingscores">
           "wrong"
         </p>
-        <a href="index.html" class="mt-5 masthead-subheading text-dark font-italic">Return Home</a>
          <!--calculate user scores and display info-->
           <script src="metrics.json"></script>
           <script src="scoreboard.json"></script>
 
-          <script>
-          let template = ""
-          var keyValues = []
-
-          for (var key in leaderboard) {
-            keyValues.push([key, leaderboard[key]])
-          }
-
-          keyValues.sort(function compare(kv1, kv2) {
-            // This comparison function has 3 return cases:
-            // - Negative number: kv1 should be placed BEFORE kv2
-            // - Positive number: kv1 should be placed AFTER kv2
-            // - Zero: they are equal, any order is ok between these 2 items
-            return kv2[1] - kv1[1]
-          })
-
-          var currentPos = 1
-
-          for (var key in leaderboard) {
-            template += `<h2>
-            ${key}    ${leaderboard[key]}
-          </h2>`
-          }
-          
-          document.getElementById("leaderboard").innerHTML = template
-            
-
-          </script>
+         
           
 
           <script>
           let scoretotal = 0
           let numquestions = 0
           //TODO: questionAttempt into locaStorage
+          /*
           for (let x in questionAttempt) {
 
             if (questionAttempt[x].correctanswer == true)
@@ -117,24 +96,57 @@
           console.log("score ",scoretotal)
           let outputtext = ("Well done! You got " + scoretotal + " out of " + numquestions + " questions correct")
           document.getElementById("subheadingscores").innerHTML=(outputtext)
+          */
       </script>
       </div>
     </header>
-    <section class="page-section bg-primary text-white mb-0" id="leaderboard">
+    <section class="page-section bg-primary text-white mb-0">
       <div class="container">
 
         <div class="text-center">
           <h2>
             Leaderboard
-          </h2>          
+          </h2>         
+          <ol id="leaderboard">
+
+          </ol> 
         </div>
     </section>
+
+    <script>
+      let template = ""
+      var keyValues = []
+
+      for (var key in leaderboard) {
+        keyValues.push([key, leaderboard[key]])
+      }
+
+      keyValues.sort(function compare(kv1, kv2) {
+        // This comparison function has 3 return cases:
+        // - Negative number: kv1 should be placed BEFORE kv2
+        // - Positive number: kv1 should be placed AFTER kv2
+        // - Zero: they are equal, any order is ok between these 2 items
+        return kv2[1] - kv1[1]
+      })
+
+      console.log(keyValues)
+
+      for (var user of keyValues) {
+        template += `<li>
+        ${(user[0].substr(0,1).toUpperCase())+(user[0].slice(1).toLowerCase())}    ${user[1]}
+      </li>`
+      }
+      
+      document.getElementById("leaderboard").innerHTML = template
+        
+
+      </script>
    
 
     <!-- Copyright Section-->
     <section class="copyright py-4 text-center text-white">
       <div class="container">
-        <small class="pre-wrap">Copyright © Your Website 2020</small>
+        <small class="pre-wrap">Copyright © Team Cyanide 2023</small>
       </div>
     </section>
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
