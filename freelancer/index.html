@@ -221,21 +221,26 @@
 
       function check(buttonObj, answervalue, correctanswer, questionIndex, topic) {
         if (+answervalue == +correctanswer) {
+          // label the question as true
           let currentLocal = JSON.parse(localStorage.getItem(`${topic}Metrics`));
-          console.log(currentLocal);
           currentLocal[questionIndex] = true;
           localStorage.setItem(`${topic}Metrics`, JSON.stringify(currentLocal));
+
+          // Add style to answer
           buttonObj.style.color = 'green';
           buttonObj.closest('[data-id]').style = 'border-color: green !important';
         } else {
+          // label the question as false
           let currentLocal = JSON.parse(localStorage.getItem(`${topic}Metrics`));
-          console.log(currentLocal);
           currentLocal[questionIndex] = false;
           localStorage.setItem(`${topic}Metrics`, JSON.stringify(currentLocal));
+
+          // Add style to answer
           buttonObj.style.color = 'red';
           buttonObj.closest('[data-id]').style = 'border-color: red !important';
           
         }
+        // Disable the button
         buttonObj.closest('p').querySelectorAll('button').forEach((btn) => {
             btn.disabled = true;
           })
