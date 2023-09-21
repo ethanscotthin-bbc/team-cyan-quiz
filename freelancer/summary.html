@@ -64,8 +64,39 @@
         </p>
         <a href="index.html" class="mt-5 masthead-subheading text-dark font-italic">Return Home</a>
          <!--calculate user scores and display info-->
-          <script src="metrics.json">
+          <script src="metrics.json"></script>
+          <script src="scoreboard.json"></script>
+
+          <script>
+          let template = ""
+          var keyValues = []
+
+          for (var key in leaderboard) {
+            keyValues.push([key, leaderboard[key]])
+          }
+
+          keyValues.sort(function compare(kv1, kv2) {
+            // This comparison function has 3 return cases:
+            // - Negative number: kv1 should be placed BEFORE kv2
+            // - Positive number: kv1 should be placed AFTER kv2
+            // - Zero: they are equal, any order is ok between these 2 items
+            return kv2[1] - kv1[1]
+          })
+
+          var currentPos = 1
+
+          for (var key in leaderboard) {
+            template += `<h2>
+            ${key}    ${leaderboard[key]}
+          </h2>`
+          }
+          
+          document.getElementById("leaderboard").innerHTML = template
+            
+
           </script>
+          
+
           <script>
           let scoretotal = 0
           let numquestions = 0
@@ -89,11 +120,13 @@
       </script>
       </div>
     </header>
-    <section class="page-section bg-primary text-white mb-0" id="questions">
+    <section class="page-section bg-primary text-white mb-0" id="leaderboard">
       <div class="container">
 
         <div class="text-center">
-          
+          <h2>
+            Leaderboard
+          </h2>          
         </div>
     </section>
    
