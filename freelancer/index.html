@@ -90,7 +90,7 @@
     <script type="text/javascript" src="scoreboard.json"></script>
     <!-- <script src=metrics.json></script> -->
     <script type="text/javascript">
-      // ITS HERE
+      // Adds the categories to the navbar menu
       var template = ""
 
       for (const element in quiz) {
@@ -106,6 +106,7 @@
     </script>
 
     <script type="text/javascript">
+//creates category dividers
       var template = "";
 
       for (const element in quiz) {
@@ -146,19 +147,20 @@
     <script>
       var template = "";
 
-      // If not already exists, add choice to save data to localStorage
-      let saveData;
-      if (localStorage.getItem('saveData') === null) {
-        if (confirm("Would you like to save your scores?")) {
-          saveData = true;
-          let username = prompt('Enter your username')
-          localStorage.setItem('username', username);
-        } else {
-          saveData = false;
-        }
-        localStorage.setItem('saveData', saveData);
-      }
+      // // Not fully implemented - system to ask user for saving scores
+      // let saveData;
+      // if (localStorage.getItem('saveData') === null) {
+      //   if (confirm("Would you like to save your scores?")) {
+      //     saveData = true;
+      //     let username = prompt('Enter your username')
+      //     localStorage.setItem('username', username);
+      //   } else {
+      //     saveData = false;
+      //   }
+      //   localStorage.setItem('saveData', saveData);
+      // }
 
+// adds quiz questions
       for (const topic in quiz) {
         quiz[topic].quizquestions.forEach((element, questionIndex) => {
 
@@ -179,11 +181,11 @@
       );
       template = "";
 
-      // Initialise dictionary and inner array in
+      // Initialise array to hold user scores
       let blankMetrics = new Array(quiz[topic].quizquestions.length).fill(null);
       localStorage.setItem(`${topic.toLowerCase()}Metrics`, JSON.stringify(blankMetrics))
     }  
-
+//checks through answers to label correct and incorrect choices
       function check(buttonObj, answervalue, correctanswer, questionIndex, topic) {
 
         topic = topic.toLowerCase()
