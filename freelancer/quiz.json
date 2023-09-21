@@ -226,52 +226,52 @@ var quiz = {
 	"Law": {
 		"quizquestions": [
 			{
-				"question": "More than half of breathable oxygen on Earth is produced by what?",
+				"question": "Which of these is technically a crime?",
 				"answers": [
-					"Oceans",
-					"Forests",
-					"The Polar Ice Caps",
-					"Clouds"
-				],
-				"correct_answer": 1
-			},
-			{
-				"question": "What percentage of New Zealand’s birds are not found anywhere else in the world?",
-				"answers": [
-					"25%",
-					"1%",
-					"70%",
-					"40%"
+					"Sticking a postage stamp upside-down on an envelope",
+					"Eating cheese on a Sunday",
+					"Enter the Houses of Parliament wearing a suit of armour",
+					"not practice the use of a longbow 2 hours per week"
 				],
 				"correct_answer": 3
 			},
 			{
-				"question": "Which large cat's name comes from a local word meaning 'he who kills with one leap'?",
+				"question": "Which of these was not a real act of parliament at any point?",
 				"answers": [
-					"Puma",
-					"Jaguar",
-					"Cheetah",
-					"Leopard"
+					"Greenland Whale Fishery Act 1805",
+					"Nuisances Removal Act 1860",
+					"Nuclear Explosions (Prohibition and Inspections) Act 1998",
+					"Lettuce and Similar Vegetables Act 1909"
+				],
+				"correct_answer": 3
+			},
+			{
+				"question": "What is the age of criminal responsibility in England and Wales?",
+				"answers": [
+					"10",
+					"16",
+					"11",
+					"8"
+				],
+				"correct_answer": 1
+			},
+			{
+				"question": "What is a newly proposed law called?",
+				"answers": [
+					"Jack",
+					"Bill",
+					"Frank",
+					"Bob"
 				],
 				"correct_answer": 2
 			},
 			{
-				"question": "What crop is the largest course of deforestation in Indonesia?",
+				"question": "What does the data protection act 1998 concern?",
 				"answers": [
-					"Rubber Trees",
-					"Bamboo",
-					"Pineapples",
-					"Oil Palms"
-				],
-				"correct_answer": 4
-			},
-			{
-				"question": "The Amazon Rainforest is the Largest in the world, what is the second largest?",
-				"answers": [
-					"Australasia",
-					"Congo",
-					"Sundaland",
-					"Indo-Burma"
+					"The operating system government computers can use",
+					"How personal information can be collected, held and used",
+					"The unauthorised access to computer materials",
+					"How copyright data applies on computers and the internet"
 				],
 				"correct_answer": 2
 			},
