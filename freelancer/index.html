@@ -228,7 +228,7 @@
 
           // Add style to answer
           buttonObj.style.color = 'green';
-          buttonObj.closest('[data-id]').style = 'border-color: green !important';
+          buttonObj.closest('[data-id]').style = 'border-color: green !important; border-width: thick !important;';
         } else {
           // label the question as false
           let currentLocal = JSON.parse(localStorage.getItem(`${topic}Metrics`));
@@ -237,7 +237,7 @@
 
           // Add style to answer
           buttonObj.style.color = 'red';
-          buttonObj.closest('[data-id]').style = 'border-color: red !important';
+          buttonObj.closest('[data-id]').style = 'border-color: red !important; border-width: thick !important;';
           
         }
         // Disable the button
@@ -251,9 +251,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <!-- Third party plugin JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <!-- Contact form JS-->
-    <script src="assets/mail/jqBootstrapValidation.js"></script>
-    <script src="assets/mail/contact_me.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
   </body>
