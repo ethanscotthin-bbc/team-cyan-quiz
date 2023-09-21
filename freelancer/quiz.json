@@ -155,7 +155,7 @@ var quiz = {
 					"Southhampton",
 					"Dartford"
 				],
-				"correct_answer": 3
+				"correct_answer": 2
 			},
 			{
 				"question": "What is the current fourth largest party in the UK Parliament?",
