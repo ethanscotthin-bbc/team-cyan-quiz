@@ -25,7 +25,7 @@ All tasks are subject to change.
 
 - [x] Change JSON data variable names
 
-- [ ] Add all additional questions for the other topics to quiz.JSON
+- [x] Add all additional questions for the other topics to quiz.JSON
 
 **Sprint 3**
 - [x] Create file called metrics.JSON
