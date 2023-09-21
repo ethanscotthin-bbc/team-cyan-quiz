@@ -8,41 +8,38 @@ All tasks are subject to change.
 ### **AM**
 
 **Sprint 1**
-> DONEResearch 4-5 questions for the first question topic and add to quiz.JSON
+- [x] Research 4-5 questions for the first question topic and add to quiz.JSON
 
 > Add 7 categories/sections onto the homepage
 - [x] Add a unique id to each section tag which corresponds to the topic name in quiz.JSON
 - [x] Add title of topic to seciton (possibly dynamic?)
 
-> Add data-id tags, with the index of the question, to all questions
-
-**Sprint 2**
-> Create template for end/results page
-- [ ] Have the number of questions correct (possibly by a loop through the questions and check the answers - keeping a score).
-- [ ] Alternative to that would be to add a data-correct tag to all that is correct and count.
-- [ ] Add a reset button which calls the move function (last, 0)
-
-> Ammend colour scheme of website
-
-> Change JSON data variable names
-
-> Add all additional questions for the other topics to quiz.JSON
-
+- [x] Add data-id tags, with the index of the question, to all questions
 ---
 ### **PM**
-**Sprint 3**
-- [ ] Create file called metrics.JSON
-- [ ] On a next button press from the first question, or from a click of the question item at the top, log the topic accessed and time of day
+**Sprint 2**
+> Create template for end/results page
+- [x] Have the number of questions correct (possibly by a loop through the questions and check the answers - keeping a score).
 
-> Build basic structure of the leaderboard in a new JSON file
+- [x] Ammend colour scheme of website
+
+- [x] Change JSON data variable names
+
+- [ ] Add all additional questions for the other topics to quiz.JSON
+
+**Sprint 3**
+- [x] Create file called metrics.JSON
+
+- [x] Build basic structure of the leaderboard in a new JSON file
 ---
 ### Thursday 21st September
 ### **AM**
 
-**Sprint 1**
-- [ ] Put new questions on JSON
+**Sprint 1/2**
+- [ ] Add margins around questions for proper mobile view
 - [ ] Show button to display summary page
 - [ ] Display leaderboard using values available (line 101 for sorting)
 - [ ] Save metrics after each click/summary page load
+  - [ ] Specific metrics
 - [ ] Log topics selected
 - [ ] Test to ensure that the leaderboard updates correctly
