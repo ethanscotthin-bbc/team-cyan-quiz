@@ -43,3 +43,10 @@
 .hidden {
     display: none;
 }
+.small-menu-color {
+    color: var(--text-header);
+}
+.small-menu-color:where(:hover, :focus) {
+    color: #fff;
+    background-color: var(--text-header) !important;
+}
