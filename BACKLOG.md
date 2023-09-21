@@ -40,7 +40,7 @@ All tasks are subject to change.
 - [x] Show button to display summary page
 
 ---
-### Didn't have time for
+### Features that are not 100% working
 - [ ] Display leaderboard using values available (line 101 for sorting)
 - [ ] Save metrics after each click/summary page load
   - [ ] Specific metrics
