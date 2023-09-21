@@ -85,7 +85,17 @@
               scoretotal += 1
             }
           }
-          let outputtext = ("Well done! You got " + scoretotal + " out of " + userscores.length + " questions correct")
+          let message = ""
+          if (userscore == 0) {
+            message = "Did you even read the questions?"
+          } else if (userscore <= 2) {
+            message = "Not bad, but not good, either."
+          } else if (userscore == 3) {
+            message = "Fine."
+          } else {
+            message = "Well done!"
+          }
+          let outputtext = (message + " You got " + scoretotal + " out of " + userscores.length + " questions correct")
           document.getElementById("subheadingscores").innerHTML = (outputtext)
           
       </script>
